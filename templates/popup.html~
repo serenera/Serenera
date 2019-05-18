@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <button id="btn">Click Me</button>
+
+        <div id="response"></div>
+
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+      $('button#btn').click(function(){
+        $.ajax({
+            url: "/_get_data/",
+            type: "POST",
+            success: function(resp){
+                $('div#response').append(resp.data);
+            }
+        });
+      });
+  </script>
+
+    </body>
+</html>

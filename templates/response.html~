@@ -1,0 +1,25 @@
+
+    {% for elem in myList %}
+
+        {{elem}}
+        <br>
+
+    {% endfor %}
+    
+   <p> "Once you choose hope, anything is possible." — Christopher Reeve </p>
+    <p>Depression is almost twice as likely to affect women than men and tends to have different contributing causes in women than it does in men. 
+</p>
+<br>
+<p>
+Detecting depression in kids or college students who are away from home can be difficult. Some depression symptoms, like uncharacteristic sadness and crying, are straightforward, but others, like trouble concentrating and irritability, are less so. 
+</p>
+<br>
+<p>
+Being the victim of bullying can have very serious consequences for a child's well-being and mental health, they could assessed for levels of hyperactivity, impulsivity, and depression as well as lack of attention, conduct problems, and psychotic-like experiences (for example,paranoid or disorganized thoughts).
+</p>
+
+
+
+
+
+

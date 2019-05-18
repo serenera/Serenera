@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+    <head>
+      <title>Analyze Depression</title>
+      <link     href='http://fonts.googleapis.com/css?family=Sintony:400,700'     rel='stylesheet' type='text/css'>
+        <meta charset="utf-8">
+        <style>
+html,body{
+  height:10%;
+}
+body{
+  text-align:center;
+  background-image: url(http://127.0.0.1:5000/static/data2.png);
+  background-size: cover;                     
+  background-repeat: no-repeat;
+}
+body:before{
+  content:'';
+  height:100%;
+  display:inline-block;
+  vertical-align:middle;
+}
+button{
+  background:#9370DB;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+button:hover{
+  background:#fff;
+  color:#9370DB;
+}
+button:before,button:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #9370DB;
+  transition:400ms ease all;
+}
+button:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+button:hover:before,button:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+.trans {
+  background: rgba(0,0,0,0.7);
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
+
+.res {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  color: #fff;
+}
+
+
+        </style>
+
+    </head>
+
+    <body>
+      <div class="trans">
+        <BR><BR>
+        <button id="btn">Analyze</button>
+        <BR><BR><BR><BR><BR>
+        <IMG SRC="http://127.0.0.1:5000/static/load.svg">
+        <BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+          
+          <CENTER><h1>
+          <div class="res">
+
+        <div id="response"></div>
+
+      </div></h1>
+    </CENTER>
+
+        <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+      $('button#btn').click(function(){
+        $.ajax({
+            url: "/_get_data/",
+            type: "POST",
+            success: function(resp){
+                $('div#response').append(resp.data);
+            }
+        });
+      });
+  </script>
+</div>
+
+</body>
+</html>
