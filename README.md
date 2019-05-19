@@ -15,6 +15,8 @@ Women experience depression at roughly twice the rate of men. Fewer than half of
 
 Thus, our application Serenera aims to reduce depression and instil mental peace and serenity.
 
+![alt text](https://github.com/serenera/Serenera/blob/master/extension/product/ser.png)
+
 ---
 
 # Approach:
