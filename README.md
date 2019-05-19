@@ -89,4 +89,39 @@ Libraries used**
 
 ---
 
+## Running the Application
+
+Extract the compressed zip file `Serenera.tar.xz` or clone this repository.
+
+**Start the backend server**
+- Open the terminal
+- Type the command
+  - `sudo python3 app.py`
+- Wait for some time for the server to be completely up and running
+
+**Loading the Chrome Extension**
+- Open `Google Chrome` browser
+- Click on the 3 dots on top right corner of the browser window
+- Choose `More tools > Extensions`
+- In the `extensions` browser tab, switch-on the `Developer mode` on the top right side
+- Choose `Load unpacked`
+- Locate and choose the `extension` folder from extracted file
+
+The extension icon appears. You can navigate through the extension and view its features! 
+
+---
+
+## References and Credits
+
+- https://arxiv.org/pdf/1804.07000.pdf
+- https://arxiv.org/pdf/1709.05865.pdf
+- HTML Templates
+  - Agnes (For music page)
+  - Ethereal (For product page)
+- Image Credits : Google Images
+- Background Music :  Trusted Advertising (By David Renda)
+
+---
+
+
 
