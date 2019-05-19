@@ -111,6 +111,8 @@ Extract the compressed zip file `Serenera.tar.xz` or clone this repository.
 
 The extension icon appears. You can navigate through the extension and view its features! 
 
+![alt text](https://github.com/serenera/Serenera/blob/master/serenera_ext.png)
+
 ---
 
 ## References and Credits
