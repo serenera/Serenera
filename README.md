@@ -17,14 +17,22 @@ Thus, our application Serenera aims to reduce depression and instil mental peace
 
 ---
 
-## Approach:
+# Approach:
 
-### **UI**
+**UI**
 - The user interface is a chrome extension, i.e., a web-based UI.
 - When the extension is enabled, it gives the depression levels of the person browsing on a scale of 1 to 10. A rating of 1 would indicate high levels of depression, while a rating of 10 will indicate low levels of depression.
 - This add-on additionally suggests measures and therapies to deal with depression. For example, depression relieving music, an appointment with a doctor or psychiatrist, etc.
 - There is also therapy chatbot or survey which helps to relieve depression and anxiety of the person. For now, it is just a simple chatbot created from `Landbot.io`. In the upcoming versions, we are planning to make it even more intelligent so as to tend to user needs as efficiently as possible.
 
+**Backend**
+- The backend consists of Machine Learning algorithms and AI models to detect/predict depression levels.
+- Chrome browsing of the user is monitored. It retrieves data based on google search results of the person.For this purpose, we are working with the browser history of the user. 
+- The textual data retrieved from chrome is analyzed using NLP algorithms, and predictions are made on the same
 
+## ML Algorithm in detail
+
+There are two python files for predicting depression. In dep1.py, python code is written  for creating model and save a moel. In the second file dep2.py, it takes saved model from first file and use it for prediction. 
+- 
 
 ---
