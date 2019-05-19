@@ -33,6 +33,16 @@ Thus, our application Serenera aims to reduce depression and instil mental peace
 ## ML Algorithm in detail
 
 There are two python files for predicting depression. In dep1.py, python code is written  for creating model and save a moel. In the second file dep2.py, it takes saved model from first file and use it for prediction. 
-- 
+
+**Dep1.py -Creating Model**
+- For model creation, NLP is used to extract depressive words by training a classifier to predict a rating (from 1 to 10) based on the text of the search History.
+- The dataset `data.csv` contains positive and depressive sentences collected from social media. In the dataset, Label for depressive sentences is “1” and for positive sentences, it is “0”. 
+- The data is passed to a classifier which classifies the positive and the depressive sentences.
+- It preprocess the data before training. In processing, first it will break the text apart into separate tokens. Sentences are often separated (tokenized) wherever there is a period. 
+- After that it removes most obvious non alphanumeric characters, (stop words) and any unnecessary punctuation.
+- The Algorithm uses the concept of TF(Term Frequency) and IDF(Inverse Document Frequency). Term Frequency is a count of how many times a word occurs in a given document. The Inverse Document Frequency is the the number of times a word occurs in a corpus of documents. 
+- Tf-Idf is used to weight words according to how important they are. Words that are used frequently in many documents will have a lower weighting while infrequent ones will have a higher weighting. Below is the formula:
+`w(i,j) = TF(i,j) * log(N / IDF(i))`
+ Here N= total sentences
 
 ---
