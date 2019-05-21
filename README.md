@@ -127,5 +127,13 @@ The extension icon appears. You can navigate through the extension and view its 
 
 ---
 
+## Contributors
+
+- Neha Jain (nehaj27 & analytickid)
+- Pallavi Pandey (Deoxyss)
+- Pooja Joshi (Turingwitch)
+
+---
+
 
 
